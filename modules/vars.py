@@ -3,18 +3,18 @@
 import os
 from os import environ
 
-API_ID = int(environ.get("API_ID", "22182189"))
-API_HASH = environ.get("API_HASH", "5e7c4088f8e23d0ab61e29ae11960bf5")
-BOT_TOKEN = environ.get("BOT_TOKEN", "8048022999:AAF4hvMZO868n31Mlqf1A3whZ0c5Vi7-tko")
+API_ID = int(environ.get("API_ID", "30574823"))
+API_HASH = environ.get("API_HASH", "2815bb996f64421716844acaf2d51493")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-OWNER = int(environ.get("OWNER", "5302639580"))
-CREDIT = environ.get("CREDIT", 'Ankit')
+OWNER = int(environ.get("OWNER", "8549673687"))
+CREDIT = environ.get("CREDIT", 'onex')
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 
-TOTAL_USER = os.environ.get('TOTAL_USERS', '5302639580').split(',')
+TOTAL_USER = os.environ.get('TOTAL_USERS', '8549673687').split(',')
 TOTAL_USERS = [int(user_id) for user_id in TOTAL_USER]
 
-AUTH_USER = os.environ.get('AUTH_USERS', '5302639580').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '8549673687').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
